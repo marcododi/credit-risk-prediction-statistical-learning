@@ -51,18 +51,18 @@ at download, May 2026.
 
 **Predictors:** 16 balance-sheet and income-statement items selected with 
 `caret::findCorrelation` (cutoff = 0.8, estimated on 2016 data and applied to 
-all years), plus sector dummies built from 2-digits NACE REV.2 codes.
+all years), plus sector dummies built from 2-digit NACE Rev.2 codes.
 
 ## Repository structure
 | File | Content |
 |--- | ---|
 | `01-data-wrangling.R` | Import and cleaning of AIDA data, variable selection, default and sector dummies |
-| `02-pre-EDA.R`| Exploratory data analysis |
+| `02-pre-eda.R`| Exploratory data analysis |
 | `03-data-transformation.R` |  Variable transformations (jittering, Yeo-Johnson, Box-Cox) |
 | `04-applied-stat-learning.R` | Model estimation and evaluation |
 | `minkowski-dist.R` | Illustration of L1 vs L2 constraint regions (Lasso vs Ridge) |
 
-Scripts are ment to be run in numerical order. **They expect `/data` and `/rdas`
+Scripts are meant to be run in numerical order. **They expect `data/` and `rdas/`
 folders, which are not provided**.
 
 ## Requirements
@@ -81,8 +81,8 @@ rpart, pROC, ggforce, latex2exp.
 
 
 
-## Licence
-MIT. See `LICENCE`.
+## License
+MIT. See `LICENSE`.
 
 
 
