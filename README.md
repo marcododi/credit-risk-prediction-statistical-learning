@@ -122,10 +122,12 @@ allots small weights to most of those excluded by the Lasso. Both methods agree
 on the most informative ones: cash and equity reduce default risk, short-term bank
 debt and other short-term liabilities increase it.
 
-<img src="images/lasso_coefficient_2016.png" width="400"> <img src="images/lda_2016_coefficient.png" width="400">
+<img src="images/lasso_coefficient_2016.png" width="650"> 
 
-*Lasso (left) and LDA (right) coefficients (2016). Only financial reports variables
-are shown; the Lasso also keeps some sector dummies (i.e. transports, textile 
+<img src="images/lda_2016_coefficient.png" width="650">
+
+*Lasso (top) and LDA (down) coefficients (2016). Only financial reports variables
+are shown; the Lasso also keeps some sector dummies (e.g. transport, textile 
 and hospitality increase default risk, professional services and communication 
 reduce it). Main variables: `dispon_liquide` = cash and cash
 equivalents; `patrimonio_netto` = equity; `banche_entro` = short-term bank
