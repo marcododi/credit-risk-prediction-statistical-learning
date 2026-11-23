@@ -97,7 +97,7 @@ and the Lasso is re-estimated on an undersampled dataset (all defaulted
 companies + 5% random sample of solvent companies).
 
 ## Results
-Area Under the Curve () by model and year:
+Area Under the Curve (AUC) by model and year:
 
 |Model               |   2016|   2020|   2023  |
 |:-------------------|------:|------:|--------:|
@@ -130,7 +130,7 @@ and hospitality increase default risk, professional services and communication
 reduce it). Main variables: `dispon_liquide` = cash and cash
 equivalents; `patrimonio_netto` = equity; `banche_entro` = short-term bank
 debt; `altri_debiti_entro` = other short-term liabilities;
-`attivo_circolante` = current assets; `ricavi` = revenues.
+`attivo_circolante` = current assets; `ricavi` = revenues.*
 
 
 
