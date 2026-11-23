@@ -415,8 +415,7 @@ x_sample_2023 <- as.matrix(x_sample_2023)
 
 lasso_sampled_2023 <- cv.glmnet(y = y_2023_sample, x = x_sample_2023, 
                                      family = "binomial", alpha = 1, 
-                                     nfolds = 10, type.measure = "deviance", 
-                                     standardize = FALSE)
+                                     nfolds = 10, type.measure = "deviance")
 
 plot(lasso_sampled_2023)
 mtext("Cross-Validation Plot Sample 2023 K = 10", side = 3, 
@@ -526,7 +525,7 @@ hit_rate_lasso_sample_2023 <- sum(
     lasso_sample_2023_confusion_matrix[1, ], 
     lasso_sample_2023_confusion_matrix[2, ])
 
-rownames(lasso_sammple_2023_confusion_matrix) <- c("$Y = 0$", "$Y = 1$")
+rownames(lasso_sample_2023_confusion_matrix) <- c("$Y = 0$", "$Y = 1$")
 
 #----- DISCRIMINANT ANALYSIS -----
 set.seed(NULL)
