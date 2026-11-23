@@ -18,14 +18,14 @@ These models are estimated on three cross-sections, 2016, 2020 (COVID-19 pandemi
 and 2023 (post-pandemic and inflation surge), to compare their behaviour under
 different economic conditions.
 
-The inputs are raw balance-sheet and income statement items rather than 
-financial ratios: the latter are just ratios of random variables that could
-result in new random variables, which could violate model assumptions and 
-complicate data transformations.
+The inputs are raw balance-sheet and income-statement items rather than 
+financial ratios: the latter are just ratios of random variables and can have 
+heavy-tailed distributions, which could violate model assumptions and complicate 
+data transformations.
 
 ## Data
 Source: AIDA (Bureau van Dijk), accessed through the University of Parma
-licence. **The data are not included in this repo** due to licence restrictions.
+license. **The data are not included in this repo due to license restrictions.**
 
 Sample selection:
 
@@ -61,6 +61,8 @@ all years), plus sector dummies built from 2-digit NACE Rev.2 codes.
 | `03-data-transformation.R` |  Variable transformations (jittering, Yeo-Johnson, Box-Cox) |
 | `04-applied-stat-learning.R` | Model estimation and evaluation |
 | `minkowski-dist.R` | Illustration of L1 vs L2 constraint regions (Lasso vs Ridge) |
+
+Thesis defense slides (in Italian) are in `slides/`.
 
 Scripts are meant to be run in numerical order. **They expect `data/` and `rdas/`
 folders, which are not provided**.
@@ -114,7 +116,7 @@ comparable with other models.*
 2020 the cross-validation selects a tree with the root only, which assigns the 
 same probability to all companies (AUC = 0.5). The 2023 value is unreliable and 
 probably reflects the random assignment of observations to the cross-validation folds.
-- All AUC values are in-sample. See Limitations.
+- All AUC values are in-sample. See Next Steps.
 
 Unlike LDA, the Lasso performs feature selection: in 2016 it keeps 8 out of the 
 16 financial variables and sets the others to zero. LDA keeps all variables, but 
@@ -134,22 +136,11 @@ equivalents; `patrimonio_netto` = equity; `banche_entro` = short-term bank
 debt; `altri_debiti_entro` = other short-term liabilities;
 `attivo_circolante` = current assets; `ricavi` = revenues.*
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Next Steps
+- Out-of-sample and out-of-time validation (e.g. estimate on 2016, test on 2020)
+with stratified sampling. 
+- Fitting models that handle class imbalance and non-linear relationships better:
+random forests, boosting, support vector machines with kernels and penalized LDA.
 
 ## License
 MIT. See `LICENSE`.
