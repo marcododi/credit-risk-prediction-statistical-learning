@@ -101,7 +101,7 @@ Area Under the Curve (AUC) by model and year:
 
 |Model               |   2016|   2020|   2023  |
 |:-------------------|------:|------:|--------:|
-|Logistic Lasso      | 0.7274| 0.7466| 0.8248\*|
+|Logistic Lasso      | 0.7247| 0.7466| 0.8248\*|
 |LDA                 | 0.7203| 0.7696| 0.8722  |
 |QDA                 | 0.7399| 0.7933| 0.8982  |
 |Classification tree | 0.5620| 0.5000| 0.7445  |
@@ -126,7 +126,7 @@ debt and other short-term liabilities increase it.
 
 <img src="images/lda_2016_coefficient.png" width="650">
 
-*Lasso (top) and LDA (down) coefficients (2016). Only financial reports variables
+*Lasso (top) and LDA (bottom) coefficients (2016). Only financial report variables
 are shown; the Lasso also keeps some sector dummies (e.g. transport, textile 
 and hospitality increase default risk, professional services and communication 
 reduce it). Main variables: `dispon_liquide` = cash and cash
