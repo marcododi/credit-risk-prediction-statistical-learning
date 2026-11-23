@@ -53,3 +53,21 @@ rsconnect/
 src/*.o
 src/*.so
 src/*.dll
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.fls
+*.fdb_latexmk
+
+
+# macOS
+.DS_Store
+
+
