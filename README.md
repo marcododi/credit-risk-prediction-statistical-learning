@@ -14,8 +14,8 @@ Probability of Default (PD) of Italian companies:
 - Quadratic Discriminant Analysis (QDA)
 - Classification Trees
 
-These models are estimated on three cross-sections, 2016, 2020 (COVID-19 pandemic)
-and 2023 (post-pandemic and inflation surge), to compare their behaviour under
+These models are estimated on three cross-sections: 2016, 2020 (COVID-19 pandemic)
+and 2023 (post-pandemic and inflation surge), to compare their behavior under
 different economic conditions.
 
 The inputs are raw balance-sheet and income-statement items rather than 
